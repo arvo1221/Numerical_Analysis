@@ -9,7 +9,7 @@ d2f = diff(df)
 errors = zeros(3,3);
 TOL = 1.e-5;
 x0 = 1;
-n = 3;
+n = 5;
 %% Newton Method
 % f(x) = e^x - x-1 = 0 has multiple root so Rate of Convergence =1
 for i=1:n
@@ -61,7 +61,7 @@ for i=1:n
     end
 end
 fprintf('\n')
-%% Steffensen's method
+%% Convergence Acceleration2
 % Rate of Convergence = 2
 x0 = 1;
 for i=1:n
